@@ -269,9 +269,10 @@ https://neto-api.herokuapp.com/bosa-noga
 
 `GET /products` — получить информацию о товарах в JSON-формате.
 
-В ответ приходит либо сообщение об ошибке, либо JSON-массив со списком из 10 товаров, согласно переданному параметру `page`, например:
+В ответ приходит либо сообщение об ошибке, либо JSON-массив со списком из 15 товаров, согласно переданному параметру `page`, например:
 ```json
 {
+  "status": "ok",
   "data": [
     {
       "id": 20,
@@ -297,13 +298,11 @@ https://neto-api.herokuapp.com/bosa-noga
       "price": 5000
     }
   ],
-  "pagination": {
-    "goods": 62,
-    "pages": 7,
-    "limit": 10,
-    "offset": 0
-  },
-  "status": "Ok"
+  "goods": 62,
+  "pages": 7,
+  "offset": 0,
+  "page": 1,
+  "limit": 15
 }
 ```
 
@@ -364,6 +363,7 @@ https://neto-api.herokuapp.com/bosa-noga
 В ответ приходит либо сообщение об ошибке, либо JSON-массив со списком товаров. Например:
 ```json
 {
+  "status": "ok",
   "data": [
     {
       "id": 20,
@@ -388,8 +388,7 @@ https://neto-api.herokuapp.com/bosa-noga
       "brand": "Dolce & Gabbana",
       "price": 3000
     },
-  ],
-  "status": "ok"
+  ]
 }
 ```
 
@@ -402,6 +401,7 @@ https://neto-api.herokuapp.com/bosa-noga
 В ответ приходит либо сообщение об ошибке, либо JSON-объект с данными о товаре. Например:
 ```json
 {
+  "status": "ok",
   "data": {
     "id": 25,
     "categoryId": 13,
@@ -428,8 +428,7 @@ https://neto-api.herokuapp.com/bosa-noga
         "avalible": false
       }
     ]
-  },
-    "status": "ok"
+  }
 }
 ```
 
