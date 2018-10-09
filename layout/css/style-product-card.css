@@ -277,13 +277,16 @@ li.active {
   align-items: center;
   width: 68px;
   height: 30px;
-  padding: 0 5px;
   font-size: 18px;
   text-align: center;
   color: #FFFFFF;
   background: #A1B3BF;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   border-radius: 50px;
+}
+
+.basket-item__quantity-change {
+  padding: 4px 6px;
 }
 
 .basket-item__quantity-change:hover {
