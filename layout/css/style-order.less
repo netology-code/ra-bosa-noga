@@ -45,11 +45,15 @@ a {
         margin-top: 40px;
         &-form {
             display: flex;
+            justify-content: space-between;
             margin-top: 25px;
         }
         &-label {
             &:not(:last-child) {
                 margin-right: 40px;
+            }
+            &_adress {
+                flex-basis: 35%;
             }
         }
         &-text {
@@ -58,7 +62,7 @@ a {
         }
         &-input {
             height: 38px;
-            width: 271px;
+            // width: 271px;
             margin-top: 4px;
             padding: 0 20px;
             font-size: 14px;
@@ -73,7 +77,7 @@ a {
                 color: #D6D6D6;
             }
             &_adress {
-                width: 504px;
+                width: 100%;
             }
         }
         p {

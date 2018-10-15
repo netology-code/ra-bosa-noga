@@ -38,10 +38,14 @@ a:hover {
 }
 .order-process__delivery-form {
   display: flex;
+  justify-content: space-between;
   margin-top: 25px;
 }
 .order-process__delivery-label:not(:last-child) {
   margin-right: 40px;
+}
+.order-process__delivery-label_adress {
+  flex-basis: 35%;
 }
 .order-process__delivery-text {
   font-size: 18px;
@@ -49,7 +53,6 @@ a:hover {
 }
 .order-process__delivery-input {
   height: 38px;
-  width: 271px;
   margin-top: 4px;
   padding: 0 20px;
   font-size: 14px;
@@ -65,7 +68,7 @@ a:hover {
   color: #D6D6D6;
 }
 .order-process__delivery-input_adress {
-  width: 504px;
+  width: 100%;
 }
 .order-process__delivery p {
   margin-top: 12px;
