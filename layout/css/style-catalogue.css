@@ -815,17 +815,26 @@ span.color-name {
   vertical-align: middle;
 }
 
-span.color-name:hover {
- text-decoration: underline;
-}
-
 .sidebar__color .color {
   display: inline-block;
   width: 25px;
   height: 25px;
   border-radius: 50%;
   vertical-align: middle;
+  opacity: 0.7;
 }
+
+.sidebar__color ul li:hover span {
+  text-decoration: underline;
+}
+
+.sidebar__color ul li:hover div {
+  opacity: 1;
+}
+
+/*span.color-name:hover {
+ text-decoration: underline;
+}*/
 
 .beige {
   background: #E5DBC5;
@@ -853,6 +862,20 @@ span.color-name:hover {
 
 .black-sabbath {
   background: #000000;
+}
+
+.chosen {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.chosen span {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.chosen div.color {
+  opacity: 1;
 }
 
 .sidebar__color .opener-down {
